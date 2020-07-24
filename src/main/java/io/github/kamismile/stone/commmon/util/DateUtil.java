@@ -18,8 +18,6 @@ public class DateUtil extends org.apache.commons.lang3.time.DateUtils {
     public static final String TIMESTAMP_DF1 = "yyyy-MM-dd'T'HH:mm:ssZ";// Facebook返回数据日期格式
 
     /**
-     * String -> Date
-     *
      * @param strDate   待解析的字符串
      * @param strFomate 格式 数值为空时 ,使用默认的日期格式{@link #TIMESTAMP_DF}解析
      * @return Date对象
@@ -61,11 +59,7 @@ public class DateUtil extends org.apache.commons.lang3.time.DateUtils {
         return null;
     }
 
-    /**
-     * 获得给定日期的上一天
-     *
-     * @param date
-     */
+
     public static String getYesterday(Date date, String strFomate) {
         if (date == null) {
             date = new Date();
@@ -81,13 +75,7 @@ public class DateUtil extends org.apache.commons.lang3.time.DateUtils {
         return formatDate(new Date(), DATE_DF);
     }
 
-    /**
-     * 得到几天前，或者几天后的时间
-     *
-     * @param d
-     * @param day
-     * @return
-     */
+
     public static Date getDateBeforeOrAfter(Date d, int day) {
         Calendar now = Calendar.getInstance();
         now.setTime(d);
