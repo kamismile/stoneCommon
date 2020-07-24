@@ -24,7 +24,7 @@ public class DistributedRedisLockService {
     @Autowired
     private RedisLockRegistry redisLockRegistry;
 
-    @Around("@annotation(io.github.kamismile.stone.commmon.component.DistributedRedisLock)")
+    @Around("@annotation(com.github.kamismile.stone.commmon.component.DistributedRedisLock)")
     public void distributedRedisLock(ProceedingJoinPoint pjp) throws Throwable {
         Method method = ((MethodSignature) pjp.getSignature()).getMethod();
         DistributedRedisLock distributedRedisLock = method.getAnnotation(DistributedRedisLock.class);

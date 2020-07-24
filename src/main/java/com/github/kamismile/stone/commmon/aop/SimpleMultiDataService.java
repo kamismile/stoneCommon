@@ -16,7 +16,7 @@ public class SimpleMultiDataService {
     @Autowired
     private ApplicationContext context;
 
-    @AfterReturning(pointcut="@annotation(io.github.kamismile.stone.commmon.component.MultiData)",returning = "rvt")
+    @AfterReturning(pointcut="@annotation(com.github.kamismile.stone.commmon.component.MultiData)",returning = "rvt")
     public void  save(JoinPoint joinPoint,Object rvt) {
         Method method = ((MethodSignature) joinPoint.getSignature()).getMethod();
         Object[] args = joinPoint.getArgs();
