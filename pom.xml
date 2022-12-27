@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.netty>4.1.48.Final</version.netty>
         <vertx.version>3.8.5</vertx.version>
-        <hazelcast.version>3.12.6</hazelcast.version>
+        <hazelcast.version>3.12.13</hazelcast.version>
         <rxjava.version>1.3.8</rxjava.version>
         <guava.version>29.0-jre</guava.version>
         <ehcache.version>3.3.1</ehcache.version>
